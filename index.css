@@ -1,0 +1,702 @@
+*{
+    padding: 0; margin: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+header{
+    background-color: #2f3640; height: 70px; width: 100%;
+    overflow: hidden; 
+}
+
+header .kiri {
+    float: left; display: inline;
+}
+
+header .kiri img{
+    width: 170px; padding: 15px;
+}
+
+header .kiri p{
+    background: black;
+    height: 70px;
+    color: grey;
+    padding: 25px;
+    width: 100px;
+    position: absolute;
+    display: inline-block;
+
+}
+
+header .kanan{
+    float: right;
+}
+
+header .kanan img{
+    width: 30px;
+    height: 30px;
+    padding: 25px;
+    border-right: 1px solid grey;
+    margin: auto;
+}
+
+header .kanan img:hover{
+    background: #636e72;
+}
+
+menu {
+    position: absolute; background-color: white; height: 80px; line-height: 80px; width: 100%;
+}
+
+menu img{
+    padding: 20px;
+}
+
+menu .menukiri{
+    display: inline-block;
+}
+
+.menukiri ul li {
+    float: left; list-style:none; 
+}
+
+.menukiri ul li a {margin-right: 15px; text-decoration: none; padding: 3px 15px; color: blue;}
+.menukiri ul li a:hover {color: black;}
+
+.menukiri ul li ul {
+    display: none;
+}
+
+.menukiri ul li:hover > ul {
+    display:block;
+}
+
+.menukiri ul li ul {position: absolute;}
+.menukiri ul li ul li {float: none; position: relative; background: white; margin-top: -3px;} 
+
+.menukanan {float: right;} 
+
+.menukanan .hub {display: inline;}
+.menukanan .hub img{width: 25px; height: 25px;}
+.menukanan .hub p {display: inline-block; margin: auto; height: 80px; position: relative; bottom: 25px; margin-left: -15px;}
+.menukanan .sosmed {display: inline;}
+.menukanan .sosmed img{width: 25px; height: 25px; display: inline-block;}
+
+.content .bg img{width: 100%; height: 650px;}
+.content .tulisan {position: absolute; width: 100%; top: 325px; text-align: center;}
+.content .tulisan h1{position: relative; color: white; font-size: 60px; font-family:Georgia, 'Times New Roman', Times, serif;}
+.content .tulisan h2{position: relative; color: white; font-size: 14px; font-family:'Courier New', Courier, monospace; word-spacing: -5px;}
+.content .tulisan button {position: relative; font-size: 16px; padding: 20px; margin-top:10px; background: turquoise; border-radius: 10px; border: 1px solid turquoise; color: white; font-family:Verdana, Geneva, Tahoma, sans-serif;}
+.content .tulisan button:hover{background: red; border: 1px solid red;}
+
+article .baru {background:#130f40; padding: 50px; position: relative; 
+    bottom: 5px; color: white; 
+    font-size: 24px; padding-left: 130px;
+    display: flex; justify-content: center;
+}
+
+input[type=text]{
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    background: #130f40;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type=date]{
+    margin-left: 15px;
+    padding: 12px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    background: #130f40;
+    width: 200px;
+    color: white;
+}
+
+select{
+   margin-left: 15px;
+   padding: 12px;
+   border: 0.5px solid white;
+   border-radius: 5px;
+   background: #130f40;
+   width: 200px;
+   color: silver;
+}
+
+select option{
+    background: black;
+}
+
+article .baru button{
+    padding: 12px;
+    margin-left: 15px;
+    width: 120px;
+    background: coral;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 0.5px solid coral;
+    color: white;
+}
+
+article .baru button:hover{background: turquoise; border: 0.5px solid turquoise}
+
+.tampilan {
+    width: 100%;
+}
+
+.tampilan .teks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tampilan .teks h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.tampilan .teks > h3 {
+    margin-top: 25px;
+    color: grey;
+    text-align: center;
+    width: 700px;
+}
+
+.galeri .alam {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+}
+
+.galeri .alam .tempat img{
+    width: 320px;
+    height: 270px;
+}
+
+.note{
+    position: relative;
+    top: -20%;
+    left: 5%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.tempat .note a{
+    position: relative;
+    width: 45%;
+    background: turquoise;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    left: 55%;
+
+}
+
+.tempat .note p{
+    position: relative;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.tempat:hover .note a{
+   background : coral;
+}
+
+.tempat:hover .note p{
+    color: coral;
+}
+.alam .tempat:hover{
+    margin-top: -5px;
+}
+
+.subscribe {
+    height: 200px;
+    background-color: #1e203d;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.subscribe .subs{
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    column-gap: 50px;
+    margin: auto;
+}
+
+.subscribe .news {
+    width: 300px;
+}
+
+.subscribe .news h3 {
+    color: white;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subscribe .news p {
+    font-size: 18px;
+    color: gray;
+    width: 300px;
+    word-spacing: 4px;
+}
+
+.subscribe .form{display: flex; width: 300px;}
+
+.subscribe .form input[type=text]{
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+    background: white
+  
+}
+
+.subscribe .form button {
+    background-color: #eb4d4b;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 15px;
+  
+}
+
+.subscribe .form button:hover{
+    background-color: turquoise;
+}
+
+.wisata{
+    width: 100%;
+}
+
+.wisata .places {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wisata .places h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.wisata .places > h3 {
+    margin-top: 25px;
+    color: grey;
+    text-align: center;
+    width: 700px;
+}
+
+.review .post {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+}
+
+.review .post .liburan img{
+    width: 350px;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.post .liburan .desc{
+    margin-top: -55px;
+    width: 320px;
+}
+
+.post .liburan .desc h1{
+    font-size: 20px;
+    padding: 15px 25px 0 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.post .liburan .desc h2{
+    font-size: 14px;
+    padding-left: 25px;
+    margin-top: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: grey;
+    margin-bottom: 20px;
+
+}
+
+.days{
+    position: relative;
+    left: 5%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.days a{
+    text-decoration: none;
+    color: black;
+}
+
+.price{
+    position: relative;
+    left: 5%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    top: -325px;
+}
+
+.price p{
+    width: 35%;
+    background: turquoise;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    left: 55%;
+
+}
+
+.price p:hover{
+    background: coral;
+}
+
+.dll{
+    position: relative; 
+    width: 100%; 
+    text-align: center;
+    margin-top: 35px;
+}
+
+.dll button{
+    padding: 20px;
+    background: coral;
+    border-radius: 5px;
+    border: 1px solid coral;
+    width: 180px;
+    color: white;
+    font-size: 18px;
+}
+
+.dll button:hover{
+    background: turquoise;
+    border: 1px solid turquoise;
+}
+
+.vid{
+    width: 100%;
+}
+
+.vid .youtube{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.vid .youtube iframe {
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.fasilitas{
+    width: 100%;
+    padding: 200px 0;
+    text-align: center;
+}
+
+.fasilitas .facility{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fasilitas .facility .journey{
+    width: 1000px;
+    display: grid;
+    column-gap: 90px;
+    grid-template-columns: auto auto auto;
+}
+
+.journey .service img{
+    margin-bottom: 50px;
+}
+
+.journey .service .pesan h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.journey .service .pesan p{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.profil{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #dfe4ea;
+}
+
+.profil img{
+    margin: auto;
+    display: flex;
+    margin-bottom: -60px;
+}
+
+.profil .testi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.profil .testi > h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    width: 700px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.profil .testi p{
+    color: grey;
+}
+
+.tips {
+    width: 100%;
+}
+
+.tips .trick {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tips .trick h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.perjalanan .recent-tips {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+}
+
+.perjalanan .recent-tips .kesan img{
+    width: 350px;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cerita{
+    width: 350px;
+}
+
+.cerita h3{
+    font-size: 12px;
+    margin-bottom: 14px;
+    color: grey;
+    padding-top: 5px;
+}
+
+.cerita a{
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer{
+    width: 100%;
+    margin: auto;
+    background: #130f40;
+    margin-top: 100px;
+}
+
+.topf{
+    width: 100%;
+    padding: 150px 0;
+}
+
+.topf .fcont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topf .footer-content {
+    display: flex;
+    align-content: center;
+    column-gap: 15px;
+}
+
+.topf .information{
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-right: 25px;
+}
+
+.topf .concept{
+    width: 350px;
+}
+
+.topf .imagefoot img{
+    width: 125px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.topf .info{
+    width: auto;
+    margin-bottom: 50px;
+}
+
+.topf .info p{
+    color: white;
+}
+
+.topf .info a{
+    text-decoration: none;
+    color: white;
+}
+
+.famous img{
+    width: 30px; height: 30px;
+    margin-right: 10px;
+}
+
+.famous{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.company h3{color: white;}
+
+.company {
+    list-style: none;
+    width: 170px;
+}
+
+.company li{
+    padding-top: 40px;
+}
+
+.company li a {
+    display: block; 
+    margin-bottom: 15px; 
+    text-decoration: none;
+    color: white;
+}
+
+.populard h3{
+    color: white;
+}
+
+.populard .dest {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 25px;
+}
+
+.dest .tempat1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.dest .tempat1 {
+    margin-right: 30px;
+}
+
+.feed-ig h3{color: white;}
+
+.feed-ig .instagram {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.view img{
+    width: 80px; height: 80px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.instagram{
+    margin-top: 25px;
+}
+.view{
+    margin-top: 5px;
+}
+
+.botf{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.botf .copyright{
+    width: 1150px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid red;
+}
+
+.botf .copyright p{
+    font-size: 18px;
+    color: white;
+}

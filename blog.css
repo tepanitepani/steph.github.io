@@ -1,0 +1,556 @@
+*{
+    padding: 0; margin: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+header{
+    background-color: #2f3640; height: 70px; width: 100%;
+    overflow: hidden; 
+}
+
+header .kiri {
+    float: left; display: inline;
+}
+
+header .kiri img{
+    width: 170px; padding: 15px;
+}
+
+header .kiri p{
+    background: black;
+    height: 70px;
+    color: grey;
+    padding: 25px;
+    width: 100px;
+    position: absolute;
+    display: inline-block;
+
+}
+
+header .kanan{
+    float: right;
+}
+
+header .kanan img{
+    width: 30px;
+    height: 30px;
+    padding: 25px;
+    border-right: 1px solid grey;
+    margin: auto;
+}
+
+header .kanan img:hover{
+    background: #636e72;
+}
+
+menu {
+    position: absolute; background-color: white; height: 80px; line-height: 80px; width: 100%;
+}
+
+menu img{
+    padding: 20px;
+}
+
+menu .menukiri{
+    display: inline-block;
+}
+
+.menukiri ul li {
+    float: left; list-style:none; 
+}
+
+.menukiri ul li a {margin-right: 15px; text-decoration: none; padding: 3px 15px; color: blue;}
+.menukiri ul li a:hover {color: black;}
+
+.menukiri ul li ul {
+    display: none;
+}
+
+.menukiri ul li:hover > ul {
+    display:block;
+}
+
+.menukiri ul li ul {position: absolute;}
+.menukiri ul li ul li {float: none; position: relative; background: white; margin-top: -3px;} 
+
+.menukanan {float: right;} 
+
+.menukanan .hub {display: inline;}
+.menukanan .hub img{width: 25px; height: 25px;}
+.menukanan .hub p {display: inline-block; margin: auto; height: 80px; position: relative; bottom: 25px; margin-left: -15px;}
+.menukanan .sosmed {display: inline;}
+.menukanan .sosmed img{width: 25px; height: 25px; display: inline-block;}
+
+.content .bg img{width: 100%; height: 650px;}
+.content .tulisan {position: absolute; width: 100%; top: 325px; text-align: center;}
+.content .tulisan h1{position: relative; color: white; font-size: 60px; font-family:Georgia, 'Times New Roman', Times, serif;}
+.content .tulisan h2{position: relative; color: white; font-size: 14px; font-family:'Courier New', Courier, monospace; word-spacing: -5px;}
+.content .tulisan button {position: relative; width: 150px; font-size: 16px; padding: 20px; margin-top:10px; background: turquoise; border-radius: 10px; border: 1px solid turquoise; color: white; font-family:Verdana, Geneva, Tahoma, sans-serif;}
+.content .tulisan button:hover{background: red; border: 1px solid red;}
+
+.artikel {width: 100%; margin-top: 50px; margin-bottom: 50px;}
+.artikel .news {width: 1500px; margin: auto; overflow: hidden;}
+.news .akiri {
+    float: left; width: 800px;
+}
+
+.news .berita {
+    margin-bottom: 35px;
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.berita .notes{
+    width: 700px;
+    margin-top: -5px;
+    padding: 30px 25px;
+}
+
+.berita img{width: 800px;}
+
+.notes a{
+    text-decoration: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.notes a:hover{color: coral;}
+.notes h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.notes h3 {font-size: 18px; color: grey; margin-bottom: 14px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+.notes p{font-size: 16px; display: inline; margin-right: 25px;}
+.notes p:hover {color: coral;}
+
+.tgl{
+    position: relative;
+    background: coral;
+    left: 5%;
+    width: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    top: -265px;
+}
+
+.tgl p {
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.tgl:hover{
+    background: transparent;
+}
+
+.next .slider{
+    width: 500px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.next .slider button{
+      width: 50px;
+      padding: 10px;
+      height: 50px;
+      margin-right: 10px;
+      border: 0.5px solid #535c68;
+}
+
+.next .slider button:hover{
+    color: coral;
+}
+.next .slider button p{
+    font-size: 16px;
+}
+
+.news .akanan{
+    float: right;
+    width: 600px;
+}
+
+.searching{
+    padding: 25px;
+    width: 285px;
+    height: 100px;
+    background: #f1f2f6;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   
+}
+
+.searching input{
+    padding: 15px;
+    width: 250px;
+    border: 1px solid grey;
+}
+
+.searching button{
+    margin-top: 15px;
+    width: 285px;
+    padding: 15px;
+    background-color: aqua;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.searching button:hover{
+    background-color: coral;
+}
+
+.category{
+    width: 335px;
+    background: #f1f2f6;
+    margin-top: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.category ul {
+    list-style: none;
+}
+
+.category h3 { 
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 22px; 
+    width: 260px; 
+    margin-left: 15px;
+    padding-left: 18px;
+}
+
+.category ul li a{
+    text-decoration: none;
+    color: grey;
+    padding: 13px;
+    font-size: 20px;
+}
+
+.category ul li a:hover{
+    color: coral;
+}
+
+.category ul li {
+    margin-top: 5px;
+    width: 300px;
+}
+
+.cat {
+    width: 250px;
+    border-top: 1px solid #bdc3c7;
+    padding: 15px;
+    padding-left: 0;
+    padding-top: 20px; padding-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.recent{
+    width: 335px;
+    background: #f1f2f6;;
+    margin-top: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-bottom: 15px;
+}
+
+.recent h3{
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #bdc3c7;
+    width: 260px;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.rp {width: 260px; height: auto; padding: 5px; margin: 25px 0 25px 25px;}
+.rp .post {margin-bottom: 30px;}
+.rp .post img {
+    width: 60px; height: 60px;
+}
+.post h4 {margin: -50px  0 6px 80px;}
+.post p { margin-left: 80px; color: grey; font-size: 16px; }
+.post a {text-decoration: none; color: black;}
+.post a:hover {color: coral;}
+
+.tag-clouds{
+    width: 335px;
+    background: #f1f2f6;;
+    margin-top: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-bottom: 15px;
+}
+
+.tag-clouds h3{
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #bdc3c7;
+    width: 260px;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+
+.tag-clouds ul{
+    list-style: none;
+    line-height: 45px;
+    margin-top: 5px;
+    margin-right: 25px; 
+}
+
+.tag-clouds ul li{
+    width: 260px;
+    margin-left: 30px;
+}
+
+.tag-clouds ul li a{
+    text-decoration: none;
+    border: 3px solid #ced6e0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    color: grey;
+}
+
+.tag-clouds ul li a:hover{
+    background: coral;
+    color: white;
+
+}
+
+.instfeed{
+    width: 335px;
+    background: #f1f2f6;;
+    margin-top: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-bottom: 15px;
+
+}
+
+.instfeed h3{
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #bdc3c7;
+    width: 260px;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.ifeed{
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.ifeed .feed{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.feed img{
+    width: 85px;
+    height: 85px;
+}
+
+.newsletter{
+    width: 335px;
+    background: #f1f2f6;;
+    margin-top: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-bottom: 15px;
+}
+
+.newsletter h3{
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #bdc3c7;
+    width: 260px;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.newsletter input{
+    padding: 15px;
+    width: 230px;
+    border: 1px solid grey;
+    margin-left: 30px;
+}
+
+.newsletter button{
+    margin-top: 15px;
+    width: 265px;
+    padding: 15px;
+    margin-left: 30px;
+    background-color: aqua;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.newsletter button:hover{
+    background: coral;
+}
+
+footer{
+    width: 100%;
+    margin: auto;
+    background: #130f40;
+}
+
+.topf{
+    width: 100%;
+    padding: 150px 0;
+}
+
+.topf .fcont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+   
+}
+
+.topf .footer-content {
+    display: flex;
+    align-content: center;
+    column-gap: 15px;
+}
+
+.topf .information{
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-right: 25px;
+}
+
+.topf .concept{
+    width: 350px;
+    
+}
+
+.topf .imagefoot img{
+    width: 125px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.topf .info{
+    width: auto;
+    margin-bottom: 50px;
+}
+
+.topf .info p{
+    color: white;
+}
+
+.topf .info a{
+    text-decoration: none;
+    color: white;
+}
+
+.famous img{
+    width: 30px; height: 30px;
+    margin-right: 10px;
+}
+
+.famous{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.company h3{color: white;}
+
+.company {
+    list-style: none;
+    width: 170px;
+}
+
+.company li{
+    padding-top: 40px;
+}
+
+.company li a {
+    display: block; 
+    margin-bottom: 15px; 
+    text-decoration: none;
+    color: white;
+}
+
+.populard h3{
+    color: white;
+}
+
+.populard .dest {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 25px;
+}
+
+.dest .tempat1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+}
+
+.dest .tempat1 {
+    margin-right: 30px;
+}
+
+.feed-ig h3{color: white;}
+
+.feed-ig .instagram {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.view img{
+    width: 80px; height: 80px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.instagram{
+    margin-top: 25px;
+}
+.view{
+    margin-top: 5px;
+}
+
+.botf{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.botf .copyright{
+    width: 1150px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid red;
+}
+
+.botf .copyright p{
+    font-size: 18px;
+    color: white;
+}
+
